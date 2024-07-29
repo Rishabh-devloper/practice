@@ -1,0 +1,12 @@
+#outer{
+    
+    border-radius: 50%;
+    background-color: rgb(165, 42, 42);
+    display: flex;
+
+}
+#inner{
+    
+    border-radius: 50%;
+    background-color: blanchedalmond;
+}

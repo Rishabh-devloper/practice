@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+  
+      <form action="" id="registration-form">
+        First Name<input type="text" id="first-name" /><br /><br />
+        Last Name<input type="text" id="last-name" /><br /><br />
+        Email<input type="email" id="email" /><br /><br />
+        Mobie no<input type="number" id="number" /><br /><br />
+        <button onclick="" id="button">Submit</button><br /><br />
+      </form>
+      <div id="display" style="display: none;">
+        <p >First Name: <span id="display-name"></span></p>
+        <p >Last Name <span id="display-lname"></span></p>
+        <p >E mail <span id="display-email"></span></p>
+        <p >Mobile No <span id="display-number"></span></p>
+      </div>
+  
+    <div class="display"></div>
+    <script>
+        document.querySelector("#registration-form").addEventListener("submit",(event)=>{
+            event.preventDefault();
+            let firstName = document.getElementById("first-name").value;
+            let lasttName = document.getElementById("last-name").value;
+            let email = document.getElementById("email").value;
+            let mobileNo = document.getElementById("number").value;
+            document.getElementById("display").style.display='block';
+            document.getElementById("display-name").textContent=firstName;
+            document.getElementById("display-lname").textContent=lasttName;
+            document.getElementById("display-number").textContent=mobileNo;
+            document.getElementById("display-email").textContent=email;
+
+        })
+    </script>
+  </body>
+</html>
